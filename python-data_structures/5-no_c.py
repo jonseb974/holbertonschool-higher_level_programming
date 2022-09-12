@@ -2,5 +2,5 @@
 # 5. Can you C me now?
 
 def no_c(my_string):
-    copy = [i for i in (my_string)) if i != 'c' and != 'C']
+    copy = [i for i in (my_string) if i != 'c' and != 'C']
     return("".join(copy))
