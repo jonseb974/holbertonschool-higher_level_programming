@@ -2,4 +2,5 @@
 # 5. Can you C me now?
 
 def no_c(my_string):
-    print(my_string.translate({ord('c') and ('C'): None}))
+    copy = [for i in range(len(my_string)) if i != 'c' and != 'C']
+    return("".join(copy))
