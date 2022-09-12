@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # 5. Can you C me now?
 
 def no_c(my_string):
