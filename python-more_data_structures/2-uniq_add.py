@@ -3,6 +3,8 @@
 
 
 def uniq_add(my_list=[]):
-    for i in (my_list):
-
-
+    unique_numbers = list(set(my_list))
+    result = 0
+    for i in (unique_numbers):
+        result += i
+    print("Result: {:d}".format(result))
