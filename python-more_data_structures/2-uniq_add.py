@@ -7,4 +7,4 @@ def uniq_add(my_list=[]):
     result = 0
     for i in (unique_numbers):
         result += i
-    return("Result: {:d}".format(result))
+    return(result)
