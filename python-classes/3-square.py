@@ -11,13 +11,13 @@ class Square:
         __size: attribute.
         """
         self.__size = size
-        if not isinstance(size, int):
+        if (type(self.__size) != int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
 
     def area(self):
         """
-        Returns the current square area.
+        returns the current square area.
         """
         return(self.__size ** 2)
