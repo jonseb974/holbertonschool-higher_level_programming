@@ -4,8 +4,7 @@
 class Square:
     """Class square."""
     def __init__(self, size=0):
-        """
-        Initialisation for a new square
+        """Initialisation for a new square
         Args:
         size (int): size of the square.
         __size: attribute.
