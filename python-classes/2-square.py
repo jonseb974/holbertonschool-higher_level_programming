@@ -1,17 +1,19 @@
 #!/usr/bin/python3
 # 2-square
+"""Define a class Square"""
 
 
 class Square:
-    """
-    Initialisation to create the square
-
-    Args:
-    size (int): The size of the new_square.
-    """
+    """Represent a square."""
 
     def __init__(size, size=0):
-        """Initialisation"""
+        """
+        Initialisation to create the square
+
+        Args:
+        size (int): The size of the new_square.
+
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         else size < 0:
