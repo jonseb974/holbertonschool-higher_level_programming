@@ -50,7 +50,7 @@ TypeError: a must be an integer
 
 >>> add_integer(float('boo'))
 Traceback (most recent call last):
-ValueError: could not convert string to float: 'boo'
+ValueError: cannot convert string to float: 'boo'
 
 >>> add_integer(10000e56000000)
 Traceback (most recent call last):
