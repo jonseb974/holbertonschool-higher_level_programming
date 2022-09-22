@@ -10,7 +10,7 @@ of these characters: ., ? and :
 def text_indentation(text):
     """print text"""
     if type(text) is not str:
-        raise typeError("text must be a string")
+        raise TypeError("text must be a string")
 
     for delim in ".,:?":
         text = (delim + "\n\n").join(
