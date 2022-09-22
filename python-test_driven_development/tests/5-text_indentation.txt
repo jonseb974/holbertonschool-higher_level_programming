@@ -14,8 +14,8 @@ Import the function:
 
 Test:
 
->>> test_indentation("Hell")
-Hell
+>>> test_indentation("Hello.")
+Hello.
 <BLANKLINE>
 
 >>> test_indentation("Hola chicos.")
@@ -75,8 +75,8 @@ Quae animi affectio suum cuique tribuens atque hanc, quam dico.
 ?
 <BLANKLINE>
 
->>> text_indentation("Homer")
-Homer
+>>> text_indentation("Holberton")
+Holberton
 
 >>> text_indentation(5)
 Traceback (most recent call last):
