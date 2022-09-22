@@ -30,7 +30,11 @@ Failure tests:
 
 >>> add_integer(1, e)
 Traceback (most recent call last):
-TypeError: b must be an integer
+NameError: name 'e' is not defined
+
+>>> add_integer(2))
+Traceback (most recent call last):
+SyntaxError: unmatched ')'
 
 >>> add_integer(None)
 Traceback (most recent call last):
@@ -46,4 +50,6 @@ TypeError: a must be an integer
 
 >>> add_integer(float('boo'))
 Traceback (most recent call last):
-ValueError: cannot convert float boo to integer
+ValueError: could not convert string to float: 'boo'
+
+>>> add_integer
