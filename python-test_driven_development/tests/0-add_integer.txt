@@ -18,7 +18,7 @@ Success tests:
 >>> add_integer(100, -2)
 98
 
->>> add_integer(2))
+>>> add_integer(2)
 100
 
 >>> add_integer(100.3, -2)
@@ -51,5 +51,3 @@ TypeError: a must be an integer
 >>> add_integer(float('boo'))
 Traceback (most recent call last):
 ValueError: could not convert string to float: 'boo'
-
->>> add_integer
