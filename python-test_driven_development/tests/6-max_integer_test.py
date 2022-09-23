@@ -14,13 +14,19 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list_reg)
         self.assertEqual(result, 4)
 
-    def test_float(self):
+    def max_integer(self):
+        """Test if list is empty """
+        list_int = []
+        result = max_integer
+        self.assertEqual(result, None)
+
+    def max_integer(self):
         """Test value float list: Return max """
         list_float = [1.5, 5.5, 2.5]
         result = max_integer(list_float)
         self.assertEqual(result, 5.5)
 
-    def test_integer(self):
+    def max_integer(self):
         """Test value of int list: Return max """
         list_int = [1, 5, 2]
         result = max_integer(list_int)
