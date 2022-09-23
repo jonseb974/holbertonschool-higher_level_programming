@@ -49,6 +49,11 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list_empty)
         self.assertEqual(result, None)
 
+    def test_list_of_one(self):
+        list_int = [5]
+        result = max_integer(list_int)
+        self.assertEqual(result, 5)
+
 
 if __name__ == '__main__':
     unittest.main()
