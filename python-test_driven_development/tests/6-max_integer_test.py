@@ -18,7 +18,7 @@ class TestMaxInteger(unittest.TestCase):
         """Test if list is empty """
         list_int = []
         result = max_integer
-        self.assertEqual(None)
+        self.assertEqual(result, None)
 
     def test_list_float(self):
         """Test value float list: Return max """
