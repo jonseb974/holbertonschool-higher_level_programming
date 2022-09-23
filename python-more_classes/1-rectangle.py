@@ -4,7 +4,8 @@
 
 
 class Rectangle:
-    """Initialisation of a rectangle."""
+    """Initialisation of a rectangle.
+    """
 
     def __init__(self, width=0, height=0):
         """
