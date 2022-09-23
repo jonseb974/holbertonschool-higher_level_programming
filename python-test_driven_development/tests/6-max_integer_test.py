@@ -7,7 +7,7 @@ max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-
+    """ test """
     def test_regular(self):
         """Test with regular list of int: return Max value """
         list_reg = [1, 2, 3, 4]
@@ -19,7 +19,7 @@ class TestMaxInteger(unittest.TestCase):
         list_int = []
         result = max_integer
         self.assertEqual(None)
-    """
+
     def list_float(self):
         """Test value float list: Return max """
         list_float = [1.5, 5.5, 2.5]
@@ -37,7 +37,6 @@ class TestMaxInteger(unittest.TestCase):
         list_int = [10, 9, 8, 7]
         result = max_integer(list_int)
         self.assertEqual(result, 10)
-    """
 
 
 if __name__ == '__main__':
