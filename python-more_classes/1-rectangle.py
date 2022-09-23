@@ -42,7 +42,7 @@ class Rectangle:
         return(self.__height)
 
     @height.setter
-    def heigth(self, value):
+    def height(self, value):
         """
         Heigth
         TypeError message
