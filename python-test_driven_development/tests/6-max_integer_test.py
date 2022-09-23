@@ -12,11 +12,11 @@ class TestMaxInteger(unittest.TestCase):
         """Test with regular list of int: return Max value """
         list_reg = [1, 2, 3, 4]
         result = max_integer(list_reg)
-        self.assertEqual(resultat, 4)
+        self.assertEqual(result, 4)
 
     def test_empty(self):
         """Test empty list: Return None """
-        list_int = []
+        list_empty = []
         result = max_integer
         self.assertEqual(result, None)
 
