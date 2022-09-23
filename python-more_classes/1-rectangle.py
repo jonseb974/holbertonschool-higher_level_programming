@@ -7,7 +7,8 @@ class Rectangle:
     """Initialisation of a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialisation datas.
+        """
+        Initialisation datas.
         Args:
             width (int): Width of the rectangle.
             height (int): Height of the rectangle.
@@ -18,7 +19,7 @@ class Rectangle:
     @property
     def width(self):
         """set width of the rectangle."""
-        return self.__width
+        return(self.__width)
 
     @width.setter
     def width(self, value):
@@ -31,7 +32,7 @@ class Rectangle:
     @property
     def height(self):
         """set height of the rectangle. """
-        return self.__height
+        return(self.__height)
 
     @height.setter
     def heigth(self, value):
