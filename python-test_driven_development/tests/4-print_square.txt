@@ -15,6 +15,7 @@ Import the function:
 Success tests:
 
 >>> print_square(4)
+
 ####
 ####
 ####
@@ -22,6 +23,7 @@ Success tests:
 
 
 >>> print_square(10)
+
 ##########
 ##########
 ##########
@@ -35,7 +37,8 @@ Success tests:
 
 
 >>> print_square(1)
+
 #
 
 
-Failure tests:
+
