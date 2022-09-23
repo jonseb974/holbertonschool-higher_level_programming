@@ -38,6 +38,12 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list_int)
         self.assertEqual(result, -1)
 
+    def list_integer(self):
+        """Test if one value is negative """
+        list_int = [10, -5, 12, 8]
+        result = max_integer(list_int)
+        self.assertEqual(result, -5)
+
 
 if __name__ == '__main__':
     unittest.main()
