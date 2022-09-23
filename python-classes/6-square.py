@@ -5,7 +5,8 @@ Represent a square
 
 
 class Square:
-    """Square classRepresente a square.
+    """
+    Square classRepresente a square.
     Private instance attribute: size:
     - property def size(self): to retrieve it
     - property setter def size(self, value): to set it:
@@ -17,7 +18,8 @@ class Square:
     Public instance method: def my_print(self).
     """
     def __init__(self, size=0, position=(0, 0)):
-        """Initialised a new square
+        """
+        Initialised a new square
         Args:
         size (int): size of the square
         """
