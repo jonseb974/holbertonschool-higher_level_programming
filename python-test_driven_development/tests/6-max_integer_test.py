@@ -14,7 +14,7 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list_reg)
         self.assertEqual(result, 4)
 
-    def test_list_integer(self):
+    def test_list_empty(self):
         """Test if list is empty """
         self.assertEqual(([]), None)
 
