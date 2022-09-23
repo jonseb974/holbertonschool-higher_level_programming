@@ -20,25 +20,25 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list_float)
         self.assertEqual(result, 5.5)
 
-    def list_integer(self):
+    def test_list_integer(self):
         """Test value of int list: Return max """
         list_int = [1, 5, 2]
         result = max_integer(list_int)
         self.assertEqual(result, 5)
 
-    def list_begining(self):
+    def test_list_begining(self):
         """Test if max value at the begining: Return Max """
         list_int = [10, 9, 8, 7]
         result = max_integer(list_int)
         self.assertEqual(result, 10)
 
-    def list_integer(self):
+    def test_list_integer(self):
         """Test if value are negative """
         list_int = [-1, -2, -5]
         result = max_integer(list_int)
         self.assertEqual(result, -1)
 
-    def list_integer(self):
+    def test_list_integer(self):
         """Test if one value is negative """
         list_int = [10, -5, 12, 8]
         result = max_integer(list_int)
