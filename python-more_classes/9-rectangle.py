@@ -19,9 +19,9 @@ class Rectangle:
         """Self
         """
         string = ((str(self.print_symbol) * self.__width) + '\n')*self.__height
-        return(string[: -1])
+        returnstring[:-1]
 
-    def __dell__(self):
+    def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
