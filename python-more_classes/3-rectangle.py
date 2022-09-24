@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 # 3-rectangle.py
-"""Define a rectangle"""
+"""Define a rectangle """
 
 
-def __init__(self, width=0, height=0):
-    """class Rectangle that defines a rectangle.
-    """
+class Rectangle:
+    """class Rectangle that defines a rectangle."""
+
     def __init__(self, width=0, height=0):
         """
         Initialisation datas.
@@ -29,7 +29,7 @@ def __init__(self, width=0, height=0):
         Width
         TypeError
         """
-        if type(value) is not [int]:
+        if type(value) not in [int]:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -42,12 +42,13 @@ def __init__(self, width=0, height=0):
         """
         return(self.__height)
 
-    @height(self, value):
+    @height.setter
+    def height(self, value):
         """
         Height
         TypeError
         """
-        if type(value) is not [int]:
+        if type(value) not in [int]:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
