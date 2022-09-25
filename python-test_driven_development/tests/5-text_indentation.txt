@@ -14,6 +14,31 @@ Import the function:
 
 Test:
 
+>>> text_indentation("    Holberton")
+Holberton
+
+>>> text_indentation(text_string)
+Quae animi affectio.
+<BLANKLINE>
+Utinam quidem:
+<BLANKLINE>
+dicerent alium alio?
+
+>>> text_indentation(357)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("Holberton .?. Schools")
+Holberton .
+<BLANKLINE>
+?
+<BLANKLINE>
+.
+<BLANKLINE>
+Schools
+
+>>> text_indentation("")
+
 >>> test_indentation("Hello.")
 Hello.
 <BLANKLINE>
