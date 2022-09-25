@@ -19,8 +19,8 @@ Success tests:
 My name is John Wicke
 
 
->>> say_my_name("Bruce")
-My name is Bruce
+>>> say_my_name("Bruce Lee")
+My name is Bruce Lee
 
 >>> say_my_name("Bruce" "Wayne" "Batman")
 My name is BruceWayneBatman
