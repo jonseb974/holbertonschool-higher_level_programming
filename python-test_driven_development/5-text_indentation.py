@@ -11,7 +11,7 @@ def text_indentation(text):
     """print text"""
     if type(text) is not str:
         raise TypeError("text must be a string")
-    
+
     start = 0
 
     for i, c in enumerate(text):
