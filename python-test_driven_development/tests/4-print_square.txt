@@ -22,7 +22,7 @@ Import the function:
 
 >>> print_square(-2)
 Traceback (most recent call last):
-TypeError: size must be >= 0
+ValueError: size must be >= 0
 
 >>> print_square(-2.7)
 Traceback (most recent call last):
