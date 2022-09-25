@@ -12,11 +12,7 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    start = 0
-
-    for i, c in enumerate(text):
-        if i == len(text) - 1:
-            print(text[start:i + 1].strip(), end="")
-        elif c in ".?:":
-            print(text[start:i + 1].strip(), end="\n\n")
-            start = i + 1
+    for delim in ".?:":
+        text = (delim + "\n\n").join(
+                [line.strio("") for line in text.split(delim)])
+    print("{}".format(text), end="")
