@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # 0-lookup.py
+"""attribute of the list
+"""
 
 
 def lookup(obj):
