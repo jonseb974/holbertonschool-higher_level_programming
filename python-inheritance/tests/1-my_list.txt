@@ -24,8 +24,3 @@ Failures:
 Traceback (most recent call last):
 NameError: name 'self' is not defined
 
->>> my_list.append(1)
-Traceback (most recent call last):
-NameError: name 'my_list' is not defined
-
-
