@@ -15,3 +15,51 @@ Import the class:
 
 tests:
 
+my_list = MyList()
+>>> []
+
+my_list.append(4)
+>>> [1, 4]
+
+my_list = MyList()
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+
+>>> [1, 4, 2]
+>>> [1, 2, 4]
+>>> [1, 4, 2] 
+
+my_list = MyList()
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+
+>>> [1, 4, 2, 3]
+>>> [1, 2, 3, 4]
+>>> [1, 4, 3, 3] 
+
+my_list = MyList()
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
+
+>>> [1, 4, 2, 3, 5]
+>>> [1, 2, 3, 4, 5]
+>>> [1, 4, 2, 3, 5]
+
+
+Failures:
+
+>>> type(self).__str__ is not object.__str__
+Traceback (most recent call last):
+NameError: name 'self' is not defined
+
+>>> my_list.append(1)
+Traceback (most recent call last):
+NameError: name 'my_list' is not defined
+
+
