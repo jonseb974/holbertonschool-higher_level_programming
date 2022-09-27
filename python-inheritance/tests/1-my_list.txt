@@ -15,9 +15,6 @@ Import the class:
 
 tests:
 
-my_list = MyList()
->>> []
-
 Failures:
 
 >>> type(self).__str__ is not object.__str__
