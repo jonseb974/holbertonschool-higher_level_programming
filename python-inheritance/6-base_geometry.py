@@ -5,6 +5,8 @@
 
 
 class BaseGeometry:
+    """class geometry
+    """
     def area(self):
         """Not implemented
         """
