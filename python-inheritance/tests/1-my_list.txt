@@ -1,0 +1,11 @@
+********************
+Using 1-myList
+********************
+
+
+
+
+
+import the class:
+
+MyList = __import__('1-my_list').MyList
