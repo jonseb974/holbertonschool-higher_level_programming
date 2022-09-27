@@ -1,11 +1,17 @@
 ********************
-Using 1-myList
+ 1-myList module
 ********************
 
 
+Usng MyList
+-------------------
 
 
 
-import the class:
 
-MyList = __import__('1-my_list').MyList
+Import the class:
+
+>>> MyList = __import__('1-my_list').MyList
+
+tests:
+
