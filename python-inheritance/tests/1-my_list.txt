@@ -12,12 +12,3 @@ Usng MyList
 Import the class:
 
 >>> MyList = __import__('1-my_list').MyList
-
-tests:
-
-Failures:
-
->>> type(self).__str__ is not object.__str__
-Traceback (most recent call last):
-NameError: name 'self' is not defined
-
