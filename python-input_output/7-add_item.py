@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""7-add_item.py
-Write a script that adds all arguments
-to a Python list, and then save them to a file.
+# 7-add_item.py
+"""Write a script that adds all arguments
+toa Python list, and then save them to a file.
 """
 
 
-import sysls
+import sys
 import json
 import os.path
 
