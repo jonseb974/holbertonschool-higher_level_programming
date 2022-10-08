@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # 12-student.py
+"""Defines a class STudent. """
 
 
 class Student:
