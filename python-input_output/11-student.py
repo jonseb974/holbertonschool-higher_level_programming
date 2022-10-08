@@ -7,6 +7,11 @@ Write a class Student that defines a student by:
 
 class Student:
     """class Student represent a student.
+    Public attributes:
+        - first_name
+        _ last_name
+        _ age
+    Public method to_json().
     """
     def __init__(self, first_name, last_name, age):
         """Initialisation.
