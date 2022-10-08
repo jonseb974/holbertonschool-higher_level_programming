@@ -4,8 +4,7 @@
 
 
 class Student:
-    """Represent a class student.
-    """
+    """Represent a class student."""
 
     def __init__(self, first_name, last_name, age):
         """Initialisation.
