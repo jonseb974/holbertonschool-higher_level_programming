@@ -6,7 +6,7 @@ Write a class Student that defines a student by:
 
 
 class Student:
-    """class Student represnt a student.
+    """class Student represent a student.
     """
     def __init__(self, first_name, last_name, age):
         """Initialisation.
@@ -20,9 +20,10 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=None):
-        """retrieves a dictionary representation of a Student instance
+    def to_json(self):
+        """Retrieves a dictionary
+        representation of a Student instance.
 
-        Args:
-            attrs (list, optional): _description_. Defaults to None.
+        Returns: dict reprentation of the instance.
         """
+        return self.__dict__
