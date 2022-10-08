@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""11-student.py
-Write a class Student that defines a student by:
-(based on 10-student.py).
-"""
+# 11-student.py
+""" Write a class Student."""
 
 
 class Student:
-    """class Student represent a student.
+    """
+    class Student represent a student.
     Public attributes:
         - first_name
         _ last_name
@@ -14,7 +13,8 @@ class Student:
     Public method to_json().
     """
     def __init__(self, first_name, last_name, age):
-        """Initialisation.
+        """
+        Initialisation.
 
         Args:
             first_name (str): First name of the student.
@@ -26,12 +26,22 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """ Return a dictionary representation
+        """
+        Return a dictionary representation
         of a Student instance.
         Args:
             attrs (list): Attributes.
         """
         if (type(attrs) = list and
                  all(type(elem) == str for elem in attrs)):
-            return {j: getattr(self, j) for j in attrs if hasattr(self, j)}
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
+
+    def reload_from_json(self, json):
+        """Replace attributes of student.
+
+        Args:
+            json (dict): key/value pairs to replace
+        """
+        for k, v in json.items():
+            setattr(self, k, v)
