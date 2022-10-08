@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # 12-pascal_triangle.py
-"""Defines a class Student. """
+""" Defines a class Student. """
 
 
 class Student:
-    """Represent a class student."""
+    """ Represent a class student."""
 
     def __init__(self, first_name, last_name, age):
         """
