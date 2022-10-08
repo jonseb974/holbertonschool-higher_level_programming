@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-# 12-student.py
-"""Defines a class STudent. """
+# 12-pascal_triangle.py
+"""Defines a class Student. """
 
 
 class Student:
     """Represent a class student."""
 
     def __init__(self, first_name, last_name, age):
-        """Initialisation.
+        """
+        Initialisation.
 
         Args:
             first_name (str): First name of the student.
@@ -19,7 +20,8 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get dictionary representation of a student
+        """
+        Get dictionary representation of a student
         Args:
             attrs (list): Some attributes.
         """
