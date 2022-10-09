@@ -120,7 +120,7 @@ class Rectangle(Base):
         x = self.__x
         y = self.__y
         id = self.id
-        return {"id" : id, "width": w, "hight": h, "x": x, "y": y}
+        return {"id": id, "width": w, "hight": h, "x": x, "y": y}
 
     def __str__(self):
         """
@@ -131,7 +131,7 @@ class Rectangle(Base):
         x = self.__x
         y = self.__y
         id = self.id
-        return("[Rectangle] ({}) {}/{} - {}/{}" .format(id, x, y, w, h))
+        return ("[Rectangle] ({}) {}/{} - {}/{}" .format(id, x, y, w, h))
 
     @property
     def width(self):
@@ -199,7 +199,7 @@ class Rectangle(Base):
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif x < 0:
+        elif value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -221,4 +221,3 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
