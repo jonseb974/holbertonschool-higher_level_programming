@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # square.py
-    """
-    class Square that inherits from Rectangle.
-    """
+"""
+class Square that inherits from Rectangle.
+"""
 
 from models.rectangle import Rectangle
 
@@ -38,7 +38,7 @@ class Square(Rectangle):
                 setattr(self, key, value)
         else:
             for i in range(len(args)):
-                setattr(self, my_attrsi[i], args [i])
+                setattr(self, my_attrs[i], args[i])
 
     def to_dictionary(self):
         """
@@ -65,6 +65,7 @@ class Square(Rectangle):
         """Getter method attribute size.
         """
         return self.width
+
     @size.setter
     def size(self, value):
         """Getter method attribut size.
