@@ -30,10 +30,10 @@ class Rectangle(Base):
             __y (int): y.
             id (int): id.
         """
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        # self.width = width
+        # self.height = height
+        # self.x = x
+        # self.y = y
         super().__init__(id)
         if type(width) is not int:
             raise TypeError("width must be an integer")
