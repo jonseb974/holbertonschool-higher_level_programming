@@ -94,7 +94,7 @@ class Base:
         """
         filename = cls.__name__ + '.json'
         if os.path.exists(filename) is False:
-            return[]
+            return []
         else:
             with open(filename, 'r', encoding='utf-8') as f:
                 my_list = cls.from_json_string(f.read())
@@ -189,4 +189,3 @@ class Base:
         turtle.write("The Turtle Geometry is done! (Click to leave).",
                      font=("Arial", 17, "normal"))
         turtle.exitonclick()
-
