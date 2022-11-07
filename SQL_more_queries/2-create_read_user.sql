@@ -4,7 +4,6 @@
 -- If the database hbtn_0d_2 already exists, your script should not fail
 -- If the user user_0d_2 already exists, your script should not fail
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2
-CREATE USER 'user_0d_2'@'localhost'
-WITH PASSWORD = 'user_0d_2_pwd';
+CREATE USER 'user_0d_2'@'localhost'IDENTIFIED BY 'user_0d_2_pwd';
 GRANT SELECT TO 'user_02_'@'localhost';
 
