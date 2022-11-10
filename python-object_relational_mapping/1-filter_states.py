@@ -10,6 +10,6 @@ if __name__ == "__main__":
                          db=argv[3], port=3306, charset="utf8")
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
-    [print(states) for state in cur.fetchall()]
+    [print(state) for state in cur.fetchall()]
     cur.close()
     db.close()
