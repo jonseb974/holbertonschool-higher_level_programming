@@ -13,10 +13,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states WHERE name='{}'".format(argv[4]))
-    query_rows = cur.fetchall()
-
-    for row in query_rows:
-        print(row)
+    [print(state) for state in cur.fetchall()]
 
     cur.close()
     db.close()
