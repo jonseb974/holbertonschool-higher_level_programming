@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """
 2-my_filter_states.py
 a script that takes in an argument and displays all values in
