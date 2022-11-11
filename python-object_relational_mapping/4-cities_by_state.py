@@ -13,7 +13,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states ")
-    [print(state) for state in cur.fetchall() if state[1] == argv[4]]
+    [print(cities) for cities in cur.fetchall() if cities[1] == argv[4]]
 
     cur.close()
     db.close()
