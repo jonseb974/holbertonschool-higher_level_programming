@@ -1,7 +1,8 @@
-#!/usr/bin/python3
-""" 2-my_filter_states.py
-    a script that takes in an argument and displays all values in
-    the states table of hbtn_0e_0_usa where name matches the argument.
+# !/usr/bin/python3
+"""
+2-my_filter_states.py
+a script that takes in an argument and displays all values in
+the states table of hbtn_0e_0_usa where name matches the argument.
 """
 
 import MySQLdb
