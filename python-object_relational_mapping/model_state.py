@@ -13,4 +13,4 @@ class State(Base):
     """Represent database Class."""
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
-    name = Column(Strin(128), nullable=False)
+    name = Column(String(128), nullable=False)
