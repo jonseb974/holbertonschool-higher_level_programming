@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-"""Script that prints the first State object from the database hbtn_0e_6_usa"""
+"""Script that prints the first State from the database hbtn_0e_6_usa"""
 
 from sqlalchemy import create_engine
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from sys import argv
 
 
-if __name__ == "__main__":
+def firstState():
+    """Print first state.
+    """
+
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
         argv[1],
         argv[2],
@@ -15,10 +18,15 @@ if __name__ == "__main__":
         pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
-    session = Session(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
     try:
         state = session.query(State).order_by(State.id).first()
     print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
     session.close()
+
+
+if __name__ == '__main__':
+    firstState()
