@@ -7,9 +7,11 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 import sys
 
+
 def allstates():
     """List all the states.
     """
+
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
         argv[1], argv[2], argv[3]), pool_pre_ping=True)
 
@@ -21,5 +23,7 @@ def allstates():
         print("{}: {}".format(state.id, state.name))
 
     session.close()
+
+
 if __name__ == "__main__":
     allstates()
