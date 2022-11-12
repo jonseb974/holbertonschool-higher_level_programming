@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-# model_state.py
-"""Python file that contains the class definition
-   of a State and an instance Base = declarative_base().
+#!/usr/bin/python3
+"""Start link class to table in database
 """
-
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)
