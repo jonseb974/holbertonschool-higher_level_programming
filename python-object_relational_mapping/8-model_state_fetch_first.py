@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Script that prints the first State from the database hbtn_0e_6_usa
-
 """
 
 from sqlalchemy import create_engine
@@ -11,7 +10,6 @@ from sys import argv
 
 def firstState():
     """Prints first state.
-
     """
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
