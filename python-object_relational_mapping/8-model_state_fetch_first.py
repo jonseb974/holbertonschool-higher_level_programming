@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 8-model_state_fetch_first.py
-"""a script that prints
-the first State object from
+"""a script that prints the first State object from
 the database hbtn_0e_6_usa.
 """
 from sqlalchemy import create_engine
