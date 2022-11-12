@@ -12,11 +12,11 @@ if __name__ == "__main__":
                          db=argv[3], port=3306, charset="utf8")
     cur = db.cursor()
 
-    cur.execute("SELECT city.id, city.name, state.name \
-                 FROM cities \
-                 INNER JOIN states \
-                 ON city.state_id=state.id \
-                 ORDER BY cities.id ASC;")
+    cur.execute("SELECT c.id, c.name, s.name \
+                 FROM cities AS c \
+                 INNER JOIN states AS s \
+                 ON c.state_id=s.id \
+                 ORDER BY c.id ASC;")
     [print(city) for city in cur.fetchall()]
 
     cur.close()
