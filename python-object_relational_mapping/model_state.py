@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# 5-filter_cities.py
-"""a script that takes in the name of a state as an argument and
-   lists all cities of that state, using the database hbtn_0e_4_usa.
+# model_state.py
+"""Python file that contains the class definition
+   of a State and an instance Base = declarative_base().
 """
 
 import sys
