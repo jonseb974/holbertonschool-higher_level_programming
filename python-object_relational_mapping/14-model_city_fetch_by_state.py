@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 # 13-model_state_delete_a.py
-"""Script that prints that prints
-all City objects from the database hbtn_0e_14_usa
-"""
+"""Script that prints all City objects from the database hbtn_0e_14_usa"""
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from model_state import Base, State
