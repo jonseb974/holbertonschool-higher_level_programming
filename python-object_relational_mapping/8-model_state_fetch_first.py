@@ -7,7 +7,8 @@ from model_state import Base, State
 import sys
 
 
-def allstates():
+if __name__ == "__main__":
+    firstStates()
     """List all the states.
     """
 
@@ -17,16 +18,10 @@ def allstates():
         sys.argv[3]),
         pool_pre_ping=True)
     Base.metadata.create_all(engine)
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    state = session.query(State).order_by(State.id).first()
-
-    if state:
-        print("{}: {}".format(state.id, state.name))
+    session = Session(engine)
+    try:
+        state = session.query(State).order_by(State.id).first()
+    print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
     session.close()
-
-
-if __name__ == "__main__":
-    firstStates()
