@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-let x = process.argv[2];
-let string = '';
-for (let i = 0; i < x; i++) {
-	for (let j = 0; j < 1; j++) {
-		string += 'C is fun';
-	}
-	string  += '\n';
+const x = Math.floor(Number(process.argv[2]));
+
+if (isNaN(x)) {
+  console.log('Missing number of occurences');
+} else {
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
 }
-console.log(string);
