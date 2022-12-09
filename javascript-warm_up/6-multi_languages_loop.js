@@ -2,6 +2,6 @@
 
 const text = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-text.forEach(function(entry) {
-	console.log(entry)
+text.forEach(function (entry) {
+  console.log(entry);
 });
