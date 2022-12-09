@@ -1,3 +1,3 @@
 #!/usr/bin/node
 
-exports.convert = function (base) { return num => num.toString(base); };
+exports.converter = function (base) { return num => num.toString(base); };
