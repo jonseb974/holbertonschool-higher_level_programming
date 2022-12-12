@@ -1,9 +1,6 @@
 #!/usr/bin/node
 
-const fs = require('fs')
-fs.readFile((err, inputD) => {
-	if (err) trow err;
-	else {
-		console.log("Error: ENOENT: no such file or directory, open 'doesntexist'")
-	}
-})
+const fs = require('fs');
+fs.readFile(process.argv[2], 'utf-8', function (error, content) {
+  console.log(error || content);
+});
