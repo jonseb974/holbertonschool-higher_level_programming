@@ -8,4 +8,4 @@ fs.readWrite(process.argv[2].each(function() {
 	if ((this).attr(process.argv[3]) == '18')
 		count++;
 	console.log(count);
-}
+});
