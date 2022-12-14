@@ -1,3 +1,1 @@
-#!/usr/bin/node
-
-const modif = document.querySelector('header').style.title = (#FF0000);
+document.querySelector('header').style.color = '#FF0000';
